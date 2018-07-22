@@ -162,7 +162,7 @@
                   (if (.startsWith endpoint "http")
                       (.withEndpointConfiguration
                         builder
-                        (AwsClientBuilder$EndpointConfiguration. endpoint nil))
+                        (AwsClientBuilder$EndpointConfiguration. endpoint ""))
                       (.withRegion builder endpoint))
                   builder)]
     (.build builder)))
